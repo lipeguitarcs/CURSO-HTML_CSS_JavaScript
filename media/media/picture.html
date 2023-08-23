@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Utilizar para tamanhos e resuluções diferentes para a mesma imagem -->
+    <img src="rwd-images/1280.jpg" 
+        alt="landscape" 
+        srcset="rwd-images/960.jpg 960w, rwd-images/640.jpg 640w, rwd-images/480.jpg 480w, rwd-images/320.jpg 320w" 
+        sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw">
+
+    <hr>
+
+    <!-- Utilizar para imagens diferentes -->
+    <picture>
+        <source media="(min-width: 900px)"
+            srcset="rwd-images/1200.jpg 1280w, rwd-images/960.jpg 960w,rwd-images/640.jpg 640w" sizes="33vw">
+
+        <source media="(min-width: 600px)"
+        srcset="rwd-images/960.jpg 960w, rwd-images/640.jpg 640w,rwd-images/480.jpg 480w" sizes="33vw">
+
+        <img src="rwd-images/320.jpg" alt="texto alternativo">
+    </picture>
+
+</body>
+</html>

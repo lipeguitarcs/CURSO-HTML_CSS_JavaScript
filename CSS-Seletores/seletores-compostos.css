@@ -1,0 +1,25 @@
+article {
+    outline: 4px solid green;
+}
+
+article a {
+    color: red;
+}
+
+article a > b {
+    color: green; /*filho direto*/
+}
+h3 + p {
+    background-color: yellow; /*irmão adjacente*/
+}
+
+hr ~ p {
+    border: 4px dashed orange; /* próximos irmãos */
+}
+
+.destaque {
+    padding: 2rem;
+}
+p:not(.destaque) {
+    background-color: #bbb;
+}

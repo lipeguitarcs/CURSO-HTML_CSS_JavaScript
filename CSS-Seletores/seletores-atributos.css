@@ -1,0 +1,15 @@
+a[href="#"]:not(.link-ok) {
+    opacity: .2; /* tags a que possuem o atribulo [href] e contém "#" */
+}
+
+a[href^="http"] {
+    color: red; /* tags a que possuem o atribulo [href] e começam com "http" */
+}
+
+a[href$=".pdf"] {
+    color: green; /* tags a que possuem o atribulo [href] e terminam com ".pdf" */
+}
+
+a[target="_blank"] {
+    text-decoration: none; /* tags a que possuem o atribulo [target] com valor "_blank" */
+}

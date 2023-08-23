@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Font-face</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+        @font-face {
+            font-family: nadia;
+            src: 
+                local("Nadia Serif"),
+                local("Nadia-Serif"),
+                url(fonts/nadia/nadia-serif.ttf) format("truetype"),
+                url(fonts/nadia/nadia-serif.woff) format("woff"),
+                url(fonts/nadia/nadia-serif.svg) format("svg");
+        }
+
+        @font-face {
+            font-family: 'chunkfiveregular';
+            src: url(fonts/chunkfive/chunkfive-regular-webfont.woff) format('woff'),
+                url(fonts/chunkfive/chunkfive-regular-webfont.woff2) format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: chunkfiveregular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-face</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur quam vitae, laudantium dolores alias eaque doloremque perferendis quas deserunt.</p>
+</body>
+</html>

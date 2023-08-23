@@ -1,0 +1,34 @@
+p:first-child {
+    color: red; /* seleciona o primeiro filho SE esse filho for um <p> */
+}
+
+p:last-child {
+    color: orange; /* seleciona o último filho SE esse filho for um <p> */
+}
+
+p:nth-child(2) {
+    background-color: #bbb; /* seleciona o filho marcado nos parênteses, se ele for um <p> */
+}
+p:first-of-type {
+    background-color: green; /* seleciona o primeiro elemento do tipo <p> */
+}
+
+p:last-of-type {
+    background-color: red; /* seleciona o último elemento do tipo <p> */
+}
+
+p:nth-of-type(2) {
+    text-align: underline; /* seleciona o filho do tipo <p> marcado nos parênteses */
+}
+
+li:nth-child(odd) {
+    background-color: red; /* even= pares, odd= ímpares */
+}
+
+li:nth-child(4n) {
+    background-color: #aaa; /* fórmula matemática. 2n significa a cada 2, 3n significa a cada 3 etc... */
+}
+
+p:nth-of-type(3n -2) {
+    text-align: right;
+}

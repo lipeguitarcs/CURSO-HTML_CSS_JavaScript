@@ -1,0 +1,89 @@
+:root {
+    --primary-color: rgb(153, 84, 84)
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: lighter;
+    margin: 20px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*.card {
+
+    Passo 1
+
+    width: 350px;
+    background-image: linear-gradient(135deg, transparent 25px, white 25px);
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 50px;
+    box-sizing: border-box;
+}*/
+
+/*.card {
+
+    Passo 2
+
+    width: 350px;
+    background-image: 
+        linear-gradient(135deg, transparent 25px, var(--primary-color) 25px), 
+        linear-gradient(135deg, transparent 25px, white 25px);
+    background-size: 36px 36px, 100%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 50px;
+    box-sizing: border-box;
+}*/
+
+.card {
+    /*width: 320px;*/
+    /*flex-basis: calc(33% - 25px);*/
+    flex-basis: clamp(300px, calc(33% - 25px), 400px);
+    flex-grow: 1;
+    background-image: 
+        linear-gradient(135deg, transparent 25px, white 25px);;
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(2px 2px 3px rgb(0, 0, 0, .3));
+    background-image: 
+    linear-gradient(135deg, transparent 25px, rgb(153,153,153) 25px);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0;
+    color: rgb(92, 92, 92);
+}
+
+.card p {
+    font-size: 12px;
+    margin: 0;
+    color: rgb(88, 88, 88);
+}

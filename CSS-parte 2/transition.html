@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Transition</title>
+
+    <style>
+
+        :root {
+            --anima: cubic-bezier(.59, -0.3, .49, 1.36);
+        }
+
+        div {
+            background-color: orange;
+            width: 200px;
+            height: 150px;
+            margin: 100px auto;
+            /*transition-property: width, height, background-color;
+            transition-duration: 2s, 1s, 3s;
+            transition-timing-function: var(--anima);
+            transition-delay: 1s, .1s;*/
+
+            /*transition: property(all) duration(0s) function(ease) delay(0s)*/
+            transition: width 2s var(--anima) 1s, height 1s var(--anima) .1s, background-color 3s var(--anima) 1s;
+        }
+
+        div:hover {
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

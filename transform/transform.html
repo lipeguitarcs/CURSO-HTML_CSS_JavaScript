@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Transform</title>
+
+    <style>
+        body {
+            margin-bottom: 100vh;
+        }
+
+        div {
+            outline: 1px solid #888;
+            width: 200px;
+            margin: .5em auto;
+        }
+
+        p {
+            width: 50%;
+        }
+
+        .destaque {
+            background-color: yellow;
+        }
+
+        .div1 .destaque {
+            transform: translate(50px, -50px); /* x, y | quando trabalha com porcentagem, utiliza como valor base o tamanho do próprio conteúdo*/
+        }
+
+        .div2 .destaque {
+            position: relative;
+            top: -50px;
+            left: 50px;
+            /* quando trabalha com porcentagem, utiliza como valor base o tamanho do conteúdo pai */
+        }
+
+        .div3 .destaque {
+            transform: rotate(-15deg);
+        }
+        
+        .div4 .destaque {
+            transform: scale(.5, 2); /* x, y */
+        }
+
+        .div5 .destaque {
+            transform: skew(45deg, 15deg); /* x, y */
+        }
+
+        .div6 .destaque {
+            transform: translate(200px) rotate(45deg); /* tomar cuidado com a ordem */
+        }
+
+        .div7 .destaque {
+            transform: rotate(45deg) translate(200px); /* o eixo x desse elemento aponta para baixo-esquerda por conta do rotate, que vem antes */
+        }
+
+        .div8 .destaque {
+            transform-origin: left bottom; /* rotaciona a partir dessa origem */
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+
+    <div class="div4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+
+    <div class="div5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+
+    <div class="div6">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+
+    <div class="div7">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+
+    <div class="div8">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p class="destaque">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, est?</p>
+    </div>
+</body>
+</html>

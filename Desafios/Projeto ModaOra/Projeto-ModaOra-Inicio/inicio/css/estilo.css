@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --page-padding: 1.6em
+}
+
+body {
+    width: 70.4%;
+    max-width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+.header {
+    min-width: 992px;
+    background-color: #162028;
+    display: flex;
+    padding: var(--page-padding);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    font-family: Viaoda Libre;
+}
+
+.header__logo {
+    font-size: 4.5em;
+    padding-left: 10%;
+    color: whitesmoke;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.8em;
+    gap: 4em;
+    text-transform: uppercase;
+}
+
+.header__nav a {
+    color: #425564;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+.header__nav a:hover {
+    color: whitesmoke;
+}
+
+.imagem-principal {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 9.5em;
+}
+
+.main-title {
+    font-size: 3em;
+    text-align: center;
+    margin: 50px auto;
+    font-family: Italiana;
+}
+
+.main-text {
+    margin: 50px 180px 50px;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.team {
+    display: flex;
+    gap: 50px;
+    margin: 80px 100px;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.name {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.character {
+    font-size: 1.5em;
+}
+
+.about-us {
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 992px;
+    max-width: 924px;
+    height: 580px;
+    background-color: #003d52;
+    text-align: left;
+    padding-top: 12em;
+    padding-left: 10em;
+}
+
+.about-us h2 {
+    color: whitesmoke;
+    font-size: 4.5em;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: Viaoda Libre;
+    font-weight: none;
+}
+
+.about-us p {
+    color: whitesmoke;
+    font-size: 1.6em;
+    margin-right: 25em;
+    font-family: Roboto;
+}
+
+.footer {
+    background-color: #0b171f;
+    text-align: center;
+    color: #6f8597;
+    width: 1004px;
+    padding: 2em 1em;
+    letter-spacing: 2px;
+    font-family: Roboto;
+}

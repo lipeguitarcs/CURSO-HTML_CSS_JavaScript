@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades de medidas</title>
+
+    <style>
+        html {
+            font-size: 62.5%; /*faz 1 em virar 10px, no padrão vale 16px*/
+        }
+
+        h1 {
+            font-size: 2.4em;
+        }
+
+        b {
+            color: red;
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 3em; /*30px*/
+            width: 10em;
+            background-color: #CCC;
+        }
+
+        .porcentagem {
+            width: 50%;
+            height: 500px;
+            background-color: yellow;
+        }
+
+        .porcentagem p {
+            background-color: orange;
+            padding-top: 50%;
+            width: 50%;
+            font-size: 1rem;
+        }
+
+        .padding-em {
+            background-color: red;
+            padding: 3em;
+        }
+
+        .padding-em p {
+            background-color: transparent;
+            margin: 0;
+            padding: .3rem;
+            font-size: 30px;
+        }
+
+        .viewport-container {
+            font-size: 3rem;
+            height: auto;
+        }
+
+        .viewport {
+            width: 90vw;
+            height: 90vh;
+            /* vh e vw são relacionados à viewport (tamanho da tela) */
+            background-color: rgba(0, 0, 255, .477);
+        }
+
+        .em {
+            width: 20em;
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+        }
+
+        .ch {
+            width: 20ch;
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+        }
+
+        /* unidade de medida "em" sempre herda o tamanho do font-size pai, já o "rem" herda o font-size do documento; o "ch" é referente à largura do número 0 */
+    </style>
+</head>
+<body>
+    <h1>Unidades de medidas</h1>
+
+    <p>Lorem ipsum dolor sit amet <b>texto em negrito</b> consectetur adipisicing elit. Ad illo amet asperiores debitis eius quisquam repellat aliquid minima nisi doloremque. Adipisci neque placeat aliquid voluptatum! Mollitia iusto enim perferendis ducimus tempora quia consectetur consequuntur officia obcaecati suscipit. Perferendis, modi deserunt. Voluptas dolores id blanditiis voluptate nobis vel repudiandae, laudantium nulla?</p>
+
+    <div class="porcentagem">
+        <p>Unidade de medida %</p>
+    </div>
+
+    <p>Porcetagem sempre é relativa à largura</p>
+
+    <div class="padding-em">
+        <p>Padding em</p>
+    </div>
+
+    <div class="porcentagem viewport-container">
+        <div class="viewport">viewport</div>
+    </div>
+
+    <div class="em">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, impedit.
+    </div>
+
+    <div class="ch">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, placeat?
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Pseudo-elementos</title>
+
+    <style>
+        p a {
+            color: red;
+            background-color: yellow;
+        }
+
+        p:has(a) {
+            background-color: #ccc; /* o elemento <p> que tem o elemento <a> dentro */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        th, td {
+            border-bottom: 1px solid#ddd;
+            padding: .5em;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e9e9e9;
+        }
+
+        tr:hover {
+            background-color: #d4d4d4;
+        }
+
+        tr:has(td:first-child input[type="checkbox"]:checked) {
+            background-color: rgb(135, 192, 135);
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>John Wick</td>
+            <td>johnwick@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Janis Joplin</td>
+            <td>janisjoplin@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Michael Jackson</td>
+            <td>michaeljackson@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Sarah O' Connor</td>
+            <td>sarahoconnor@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>David Bowie</td>
+            <td>davidbowie@example.com</td>
+        </tr>
+    </table>
+
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere atque accusantium esse eveniet sint maiores labore, inventore numquam mollitia molestiae iste, delectus aut. Ipsum numquam consequatur eligendi eos libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere atque accusantium esse eveniet sint maiores labore, inventore numquam mollitia molestiae iste, delectus aut. Ipsum numquam consequatur eligendi eos libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">clique aqui para saber mais</a> Quasi facere atque accusantium esse eveniet sint maiores labore, inventore numquam mollitia molestiae iste, delectus aut. Ipsum numquam consequatur eligendi eos libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere atque accusantium esse eveniet sint maiores labore, inventore numquam mollitia molestiae iste, delectus aut. Ipsum numquam consequatur eligendi eos libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere atque accusantium esse eveniet sint maiores labore, inventore numquam mollitia molestiae iste, delectus aut. Ipsum numquam consequatur eligendi eos libero.</p>
+</body>
+</html>
