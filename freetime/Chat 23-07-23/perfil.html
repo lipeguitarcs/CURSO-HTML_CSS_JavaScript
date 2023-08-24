@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfil de Usuário</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+    <div class="perfil">
+        <img src="https://via.placeholder.com/150" alt="Foto do Usuário">
+        <h1>Nome do Usuário</h1>
+        <p>Email: usuario@example.com</p>
+        <p>Idade: 25 anos</p>
+        <p>Cidade: Cidade Exemplo</p>
+        <button onclick="exibirMensagemPersonalizada()">Clique aqui para uma mensagem personalizada</button>
+    </div>
+    
+    <script>
+        function exibirMensagemPersonalizada() {
+          const nomeUsuario = prompt('Digite seu nome:');
+          if (nomeUsuario) {
+            const mensagem = `Olá, ${nomeUsuario}! Seja bem-vindo(a) ao seu perfil.`;
+            alert(mensagem);
+          }
+        }
+      </script>      
+
+</body>
+</html>

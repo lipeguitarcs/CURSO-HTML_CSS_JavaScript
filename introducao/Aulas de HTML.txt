@@ -1,0 +1,88 @@
+Destaques de texto:
+
+<i> serve para deixar o texto em itálico ex.: O <i>o</i> é um artigo
+
+    <em> também deixa em itálico, mas serve para dar uma ênfase no destaque ex.: Eu <em>amo</em> lasanha (destacou o verbo "amo")
+    
+<b> serve para deixar o texto em negrito ex.: Bem-vindo <b>Daniel</b>
+
+    <strong> também serve para deixar o texto em negrito, porém também dá prioridade para o texto destacado nos motores de busca e etc ex.: Estamos aprendendo <strong>tags semânticas</strong>
+
+<mark> serve para destacar o texto, com uma tinta de fundo, mas não deixa o texto mais importante
+
+listas não ordenadas começam com a tag <ul> ex.: 
+    <ul>
+        <li> ... </li>
+        <li> ... </li>
+        <li> ... </li>
+    </ul>
+
+listas ordenadas começam com a tag <ol> ex.: 
+    <ol>
+        <li> ... </li>
+        <li> ... </li>
+        <li> ... </li>
+    </ol>
+
+A tag <a> serve para criar links âncora. É a tag mais importante do html. (hiperlink). se guiando pelos ATRIBUTOS
+
+Atributos: <tag atributo="valor"> texto aqui </tag>
+
+ex.: <p> saiba mais sobre <a href="http://www....com.br">HTML5</a> visitando nosso blog e seja feliz </p>
+          - Nesse caso o link é aberto na mesma aba
+
+     <p> saiba mais sobre <a href="http://www....com.br" target="_blank">HTML5</a> visitando nosso blog e seja feliz </p>
+          - Nesse caso a tag <target> direciona a página para uma nova aba ("_blank)
+
+Tipos de link:
+
+    <a href="http://www....com.br"> - Site externo
+    <a href="outraPagina.html"> - Link interno do site (outra pagina do diretorio)
+    <a href="#secao"> - Scrolla para a seção dentro da própria página
+    <a href="mailto:alguem@server.com"> - Abre o programa de email do usuário
+
+Quebras de linha:
+
+    <br> - pula uma linha
+    <hr> - faz uma linha horizontal
+
+Código de espaço: "&nbsp;" 
+
+Deixar o texto como comentário: <!-- ... -->
+
+-----------------------------------------------------------------------------------------------------------
+
+Hierarquia da página html: (atalho: segurar "!" e apertar enter)
+
+<!doctype html> - Não é necessariamente uma tag, mas informa o agente do usuário que esse é um arquivo html (colocar no inicio)
+
+<html lang="pt-br">
+    <head>
+        <title> título da página </title>
+        <meta tags> - tags que passam informações adicionais (informações que ficam escondidas do usuário mas que se comunicam com o mesmo)
+
+        <meta charset="utf-8"> - geralmente usam essa mesmo (são os caracteres da página)
+
+        <link para arquivos externos> - arquivos de css, javascript etc (usa tag <a> <link> <img> <script>)
+    </head>
+
+    <body>
+        <!-- conteúdo da página (todas as tags que vimos acima) -->
+        <h1> título da página </h1>
+        <p> texto </p>
+        <ul>
+            <li> item de lista </li>
+        </ul>
+    </body>
+</html>
+
+Imagens, arquivos externos e links:
+
+<a> principais atributos: href e title
+<link> principais atributos: href e rel
+<img> principais atributos: src e alt
+<script> principal atributo: src
+
+comentário no CSS: /* ... */
+
+código para "en dash": &#8211; -- É aquele tracinho pra indicar conexão
