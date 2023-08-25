@@ -1,0 +1,5 @@
+#felipe-personal account
+Host https://github.com/lipeguitarcs
+HostName github.com
+User git
+IdentityFile SHA256:vY9ih+KfxY8iBid882fvc3IrgN1if1saHuVGjSjIxKY
