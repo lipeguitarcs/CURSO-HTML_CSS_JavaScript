@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>DOM - Problema 1</h1>
+        
+        <input type="text" id="txtNome" value="digite" readonly>
+        
+        <script>
+
+            var $txt = document.querySelector('#txtNome'); 
+            var nome = "Felipe ";
+            var sobrenome = "Carvalho Silva";
+
+            document.querySelector('#txtNome').value = nome + sobrenome;
+            document.querySelector('#txtNome').disabled = true;
+
+        </script>
+        
+    </body>
+</html>

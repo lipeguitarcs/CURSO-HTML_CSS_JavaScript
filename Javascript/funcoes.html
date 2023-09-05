@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+
+    <script>
+
+        //literal
+        function somar(n1, n2) {
+            //corpo da função
+            return n1 + n2;
+        }
+
+        var soma = somar(10, 20);
+        console.log('Resultado: ', soma);
+
+        somar.teste = 'Propriedade da função';
+
+        console.log(somar.teste);
+
+        var teste = function amora(f){
+            f();
+        };
+
+        teste(function(){
+            console.log('Função passada por parâmetro')
+        });
+
+        console.log('-----------------------------------');
+
+
+        var x = 0;
+        var y;
+
+        function mostraX(){
+            var x = 10;
+            var y = 20;
+            console.log("mostra x dentro: ", x);
+            console.log("mostra y dentro: ", y);
+        }
+
+        mostraX()
+
+        console.log("mostra x fora: ", x);
+        console.log("mostra y fora: ", y);
+
+
+        //IIFE (Immediately-Invoked Function Expression)
+
+        (function(){
+            'use strict'; //boa prática dentro das funções
+            var isValid = false;
+            console.log(isValid);
+
+            function somar(arr){
+                console.log(arguments);
+                var result = 0;
+                var x = 0;
+
+                while(arguments[x]){
+                    result += arguments[x] //propriedade 'arguments' permite verificar todos os parâmetros
+                    x++;
+                }
+                console.log('Result: ', result);
+            }
+
+            somar(20, 20, 10, 30);
+        })();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
