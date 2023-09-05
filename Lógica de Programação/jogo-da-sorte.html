@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jogo da sorte</h1>
+
+    <script>
+
+        //fazer o jogador1 digitar um número
+        var n1 = parseInt(prompt('Jogador 1, digite seu número:'));
+
+        //fazer o jogador2 digitar um número
+        var n2 = parseInt(prompt('Jogador 2, digite seu número:'));
+
+        //se forem iguais, mostrar mensagem 'empate'
+        if(n1 === n2){
+            alert("Vocês empataram! :o");
+        } else{
+
+            //sortear um número entre 0 e 1
+            var nRandom = parseInt(Math.random() * 2);
+            
+           //se o número sorteado for 0, ganha quem escolher o número MENOR
+           if(nRandom === 0){
+
+                if(n1 < n2){
+                    alert("O Jogador 1 venceu!");
+                } else {
+                    alert("O Jogador 2 venceu!");
+                }
+           } else {
+
+            //se o número sorteado for 1, ganha quem escolher o número MAIOR
+                if(n1 > n2){
+                    alert("O Jogador 1 venceu!");
+                } else{
+                    alert("O Jogador 2 venceu!");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

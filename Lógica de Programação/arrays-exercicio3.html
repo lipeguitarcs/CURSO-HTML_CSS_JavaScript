@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome e Email</title>
+</head>
+<body>
+    <h1>Nome e email</h1>
+
+    <div id="output"></div>
+</body>
+
+<script>
+    var user = [
+        {'nome': 'Bessie Chavez', 'email': 'bessie.chavez@example.com'}, 
+        {'nome': 'Willie Hoffman', 'email': 'willie.hoffman@example.com'}, 
+        {'nome': 'Danielle Lee', 'email': 'danielle.lee@example.com'}
+        ];
+
+    var msg = '';
+
+    for(var i = 0; i < user.length; i++){
+        
+        msg += "<h2> Nome: " + user[i].nome + "<h2>";
+        msg += "<p> Email: " + user[i].email + "<p><br>";
+    }
+
+    document.querySelector('#output').innerHTML = msg;
+</script>
+</html>

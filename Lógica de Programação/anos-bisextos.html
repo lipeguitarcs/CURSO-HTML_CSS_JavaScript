@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos Bisextos</title>
+</head>
+<body>
+    <h1>Anos Bisextos</h1>
+
+    <script>
+        var ano = 1004;
+
+        while(ano <= 2017){
+
+            if( !(ano % 100 === 0) || (ano % 400 === 0)){
+                document.write(ano + '<br>');
+            } else {
+                document.write(ano + ' não é bisexto<br>')
+            }
+            
+            // ano = ano + 4;
+            ano += 4;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Comparação</title>
+</head>
+<body>
+    <h1>Operadores de Comparação</h1>
+</body>
+
+<script>
+    var n1 = prompt('Digite um número');
+    n1 = parseFloat(n1);
+
+    var n2 = parseFloat(prompt('Digite outro número'));
+
+    var media = (n1 + n2) / 2;
+5
+    alert(media > 5);
+
+    if(media > 5 && n1 > 0 && n2 > 0){
+        // bloco verdade
+        alert("Parabéns, você foi aprovado!")
+    } else {
+        // bloco mentira
+        alert("Você foi reprovado. :(")
+    }
+
+    // if(n1 === 0 || n2 === 0 || media <= 5){
+    //     alert("Você foi reprovado. :(")
+    // } else {
+    //     alert("Parabéns, você foi aprovado!")
+    // }
+
+</script>
+</html>
