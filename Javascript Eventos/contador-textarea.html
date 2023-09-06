@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de caracteres de um textarea</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de caracteres de um textarea</h1>
+
+        <textarea id="msg" cols="50" rows="10"></textarea>
+        Restam <span id="resta"></span> caracteres
+
+    </div>
+
+    <script>
+
+        (function(){
+            'use strict';
+            var maxima = 100;
+
+            var $txtMsg = document.getElementById('msg');
+            var $resta = document.getElementById('resta');
+
+            $resta.textContent = maxima;
+
+            $txtMsg.addEventListener('input', checkLength);
+
+            function checkLength(e){
+            }
+        })
+    </script>
+</body>
+</html>

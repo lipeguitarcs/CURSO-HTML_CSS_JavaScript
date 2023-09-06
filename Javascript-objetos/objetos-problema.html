@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Objetos</h1>
+    </div>
+
+    <script>
+
+        var pessoa1 = {
+            nome: 'Felipe',
+            sobrenome: 'Carvalho Silva'
+        };
+        var pessoa2 = {
+            nome: 'José',
+            sobrenome: 'Geraldo'
+        };
+        var pessoa3 = {
+            nome: 'Maria',
+            sobrenome: 'Oliveira'
+        };
+
+        for(var i = 0; i <= 3; i++){
+            console.log(window['pessoa'+i].nome + ' ' + window['pessoa'+i].sobrenome);
+        }
+    </script>
+</body>
+</html>

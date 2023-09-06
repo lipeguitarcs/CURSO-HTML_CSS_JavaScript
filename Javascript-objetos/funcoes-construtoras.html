@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções construtoras</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Funções construtoras</h1>
+    </div>
+
+    <script>
+        var Caneta = (function(window){
+            'use strict';
+            function _caneta(price, cor){
+            this.price = price || 1;
+            var color = cor || 'black';
+                this.mudarCor = function(cor){
+                    if(cor !== 'red' && cor !== 'blue' && cor !== 'black'){
+                        return;
+                    }
+                    color = cor;
+                }
+
+                this.pegaCor = function(){
+                    return color;
+                }
+            }
+
+            return _caneta;
+        })()
+    </script>
+</body>
+</html>
