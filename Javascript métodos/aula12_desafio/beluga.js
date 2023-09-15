@@ -17,6 +17,5 @@ function sortear(n){
     var nSorteado = Math.random();
     nSorteado = nSorteado * _n;
     nSorteado = Math.floor(nSorteado);
-
     return nSorteado;
 }

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript - Arrays</title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <h1>Javascript - Arrays</h1> 
+
+        <script>           
+        
+            var arr = new Array('1',2,3,4,5, 'string', 20, "30");
+
+            var soNumeros = arr.every( function(el, indice, obj){
+
+                return typeof el === 'number';
+
+            });
+            console.log(soNumeros);
+
+            var aoMenosUmNumero = arr.some( function(el){
+
+                return typeof el === 'number';
+
+            });
+            console.log(aoMenosUmNumero);
+
+            var numeros = arr.filter(function(el, i, arr){
+                return typeof el === 'number';
+            });
+
+            console.log(numeros);
+
+            arr.forEach(function(el, i, arr){
+                console.log('el=', el, ' | i=', i, ' | i - ', arr.toString());
+            })
+
+            var posicaoStr1 = arr.indexOf('string');
+            console.log('posicaoStr1', posicaoStr1);
+
+            var posicaoStr2 = arr.lastIndexOf(20, 5);
+            console.log('posicaoStr2', posicaoStr2);
+
+            console.log(numeros);
+            numeros = numeros.map(function(el, i, arr){
+                return el * i;
+            })
+            console.log(numeros);
+
+            var arr2 = arr.concat(numeros, 'ola', 'arr2', 100);
+            console.log(arr2);
+
+            var str = arr2.join(' -- ');
+            console.log(str);
+
+            arr.push('novo', 'item');
+            console.log(arr);
+
+            var ultimoItem = arr.pop(); // acrescenta um item no final da array
+            console.log(ultimoItem);
+            console.log(arr);
+
+            var primeiroItem = arr.shift(); //retira o item da array, que pode ser armazenado na variavel
+            console.log(primeiroItem);
+            console.log(arr);
+
+            arr.unshift(true, false, 'unshift'); // acrescenta um item no inicio da array
+            console.log(arr);
+
+            var somaDeArr = numeros.reduce( function(anterior, atual, indice){
+                console.log('anterior: ', anterior, '| atual: ', atual, ' | indice: ', indice);
+                return anterior + atual + indice;
+            });
+            console.log(numeros);
+            console.log(somaDeArr);
+
+            var testeReduce = ['1', '2', '3', '4', '5'].reduceRight(function(i, a){
+                return i + a; 
+            })
+            console.log(testeReduce);
+
+            var arr = [10,20,30];
+            arr.reverse();
+            console.log(arr);
+
+            console.log(arr2.slice(2, 5));
+
+            console.log('-------');
+            console.log(arr2);
+            var arr3 = arr2.splice(2, 3, 'limao', 'melao'); // a partir de, itens excluidos, itens adicionados
+            console.log(arr2);
+            console.log(arr3);
+
+        </script>        
+        
+    </body>
+</html>

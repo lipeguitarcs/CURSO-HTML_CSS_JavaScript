@@ -1,0 +1,19 @@
+São métodos estáticos, então não é preciso criar uma instância (não utiliza o 'new')
+
+Math.min => retorna o valor mínimo dos números passados em parâmetro
+
+Math.max => retorna o valor máximo dos números passados em parâmetro
+
+Math.round => arredonda o número mais próximo passado em parâmetro 
+
+Math.floor => sempre arredonda pra baixo
+
+Math.ceil => sempre arredonda pra cima
+
+Math.pow => retorna a potência dos números passados em parâmetro (também pode se usar '**' para fazer a potência)
+
+Math.sqrt => retorna a raiz quadrada do número passado em parâmetro
+
+Math.cbrt => retorna a raiz cúbica do número passado em parâmetro
+
+Math.random => retorna um número aleatório entre 0 e 1 (mas nunca chegando à 1)
