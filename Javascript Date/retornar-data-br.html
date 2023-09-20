@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retornar data no formato brasileiro</title>
+
+    <script>
+        (function(){
+            var data = new Date();
+
+            function formatDate(data){
+                var dia = data.getDate() < 10 ? '0' + data.getDate() : data.getDate();
+
+                var mes = data.getMonth() + 1;
+
+                mes = mes < 10 ? '0' + mes : mes;
+
+                '18/09/2023'
+                return dia + '/' + mes + '/' + data.getFullYear();
+            }
+
+            console.log(formatDate(data));
+        })();
+    </script>
+
+</head>
+<body>
+    <h1>Retornar data no formato brasileiro</h1>
+</body>
+</html>

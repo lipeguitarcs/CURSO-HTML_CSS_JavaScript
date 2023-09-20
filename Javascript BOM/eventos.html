@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript BOM - Eventos</title>
+</head>
+<body>
+    <h1>Eventos - BOM</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi porro fugit sint cum tempora perferendis quae non tenetur saepe quas.</p>
+
+    <img src="https://www.resilia.com.br/wp-content/uploads/2022/07/1_6ahbWjp_g9hqhaTDSJOL1Q.png" alt="JS">
+
+    <script>
+
+        window.addEventListener('load', function(){
+            console.log('load disparado');
+        });
+
+        window.addEventListener('DOMContentLoaded', function(){
+            console.log('DOMContentLoaded disparado');
+        })
+
+        window.addEventListener('resize', function(e){
+            console.log('resize disparado');
+            console.log(e);
+        });
+
+        window.addEventListener('scroll', function(e){
+            console.log('scroll disparado');
+            console.log(e);
+            console.log('scroll Y', pageYOffset);
+        });
+
+        window.addEventListener('unload', function(){
+            console.log('unload disparado');
+            alert('unload disparado');
+        });
+
+        window.addEventListener('beforeunload', function(){
+            console.log('beforeunload disparado');
+            alert('beforeunload disparado');
+        });
+    </script>
+</body>
+</html>
